@@ -11,6 +11,7 @@
 #import "SingletonViewController.h"
 #import "FactoryMethodViewController.h"
 #import "BuilderViewController.h"
+#import "AdapterViewController.h"
 
 #define IDENTIFIER @"tableViewCell"
 
@@ -27,7 +28,7 @@
 - (NSMutableArray *)dataAry
 {
     if(!_dataAry){
-        _dataAry = [NSMutableArray arrayWithObjects:@"原型模式（Prototype）",@"单例模式（Singleton）",@"工厂方法模式（FactoryMethod）",@"建造者模式（Builder）",@"",@"",@"",@"",@"",@"", nil];
+        _dataAry = [NSMutableArray arrayWithObjects:@"原型模式（Prototype）",@"单例模式（Singleton）",@"工厂方法模式（FactoryMethod）",@"建造者模式（Builder）",@"适配器模式（Adapter）",@"",@"",@"",@"",@"", nil];
     }
     return _dataAry;
 }
@@ -76,7 +77,10 @@
         }
             break;
         case 4:
-            
+        {
+            AdapterViewController * viewController = [[AdapterViewController alloc] init];
+            [self.navigationController pushViewController:viewController animated:true];
+        }
             break;
         case 5:
             

@@ -28,6 +28,11 @@
 		A94B2FBD20BD423000ED7904 /* LHBuickVeranoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A94B2FBC20BD423000ED7904 /* LHBuickVeranoBuilder.m */; };
 		A94B2FC020BD423C00ED7904 /* LHBuickRegalBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A94B2FBF20BD423B00ED7904 /* LHBuickRegalBuilder.m */; };
 		A94B2FC320BD42F100ED7904 /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94B2FC220BD42F100ED7904 /* BuilderViewController.m */; };
+		A96BE77C20BE3585006A7ECA /* AdapterModal.m in Sources */ = {isa = PBXBuildFile; fileRef = A96BE77B20BE3585006A7ECA /* AdapterModal.m */; };
+		A96BE78020BE4CA0006A7ECA /* AdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96BE77E20BE4CA0006A7ECA /* AdapterViewController.m */; };
+		A96BE78120BE4CA0006A7ECA /* AdapterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96BE77F20BE4CA0006A7ECA /* AdapterViewController.xib */; };
+		A96BE78420BE503E006A7ECA /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A96BE78320BE503E006A7ECA /* Adapter.m */; };
+		A96BE78720BE513C006A7ECA /* ModalAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A96BE78620BE513C006A7ECA /* ModalAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +76,15 @@
 		A94B2FBF20BD423B00ED7904 /* LHBuickRegalBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHBuickRegalBuilder.m; sourceTree = "<group>"; };
 		A94B2FC120BD42F100ED7904 /* BuilderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderViewController.h; sourceTree = "<group>"; };
 		A94B2FC220BD42F100ED7904 /* BuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderViewController.m; sourceTree = "<group>"; };
+		A96BE77A20BE3585006A7ECA /* AdapterModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterModal.h; sourceTree = "<group>"; };
+		A96BE77B20BE3585006A7ECA /* AdapterModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterModal.m; sourceTree = "<group>"; };
+		A96BE77D20BE4CA0006A7ECA /* AdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterViewController.h; sourceTree = "<group>"; };
+		A96BE77E20BE4CA0006A7ECA /* AdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterViewController.m; sourceTree = "<group>"; };
+		A96BE77F20BE4CA0006A7ECA /* AdapterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdapterViewController.xib; sourceTree = "<group>"; };
+		A96BE78220BE503E006A7ECA /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		A96BE78320BE503E006A7ECA /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		A96BE78520BE513C006A7ECA /* ModalAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalAdapter.h; sourceTree = "<group>"; };
+		A96BE78620BE513C006A7ECA /* ModalAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,7 @@
 		A94B2F7B20BD23E200ED7904 /* DesignMode */ = {
 			isa = PBXGroup;
 			children = (
+				A96BE77920BE355E006A7ECA /* Adapter（适配器模式） */,
 				A94B2F9220BD249A00ED7904 /* Builder(建造者模式) */,
 				A94B2F9520BD249A00ED7904 /* FactoryMethod(工厂方法模式) */,
 				A94B2F9620BD249B00ED7904 /* Prototype(原型模式) */,
@@ -178,6 +193,22 @@
 			path = "Prototype(原型模式)";
 			sourceTree = "<group>";
 		};
+		A96BE77920BE355E006A7ECA /* Adapter（适配器模式） */ = {
+			isa = PBXGroup;
+			children = (
+				A96BE77A20BE3585006A7ECA /* AdapterModal.h */,
+				A96BE77B20BE3585006A7ECA /* AdapterModal.m */,
+				A96BE77D20BE4CA0006A7ECA /* AdapterViewController.h */,
+				A96BE77E20BE4CA0006A7ECA /* AdapterViewController.m */,
+				A96BE77F20BE4CA0006A7ECA /* AdapterViewController.xib */,
+				A96BE78220BE503E006A7ECA /* Adapter.h */,
+				A96BE78320BE503E006A7ECA /* Adapter.m */,
+				A96BE78520BE513C006A7ECA /* ModalAdapter.h */,
+				A96BE78620BE513C006A7ECA /* ModalAdapter.m */,
+			);
+			path = "Adapter（适配器模式）";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +268,7 @@
 			files = (
 				A94B2F8920BD23E400ED7904 /* LaunchScreen.storyboard in Resources */,
 				A94B2F8620BD23E400ED7904 /* Assets.xcassets in Resources */,
+				A96BE78120BE4CA0006A7ECA /* AdapterViewController.xib in Resources */,
 				A94B2F8420BD23E300ED7904 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,11 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96BE77C20BE3585006A7ECA /* AdapterModal.m in Sources */,
 				A94B2FC320BD42F100ED7904 /* BuilderViewController.m in Sources */,
+				A96BE78020BE4CA0006A7ECA /* AdapterViewController.m in Sources */,
 				A94B2FB720BD415200ED7904 /* LHBuickBuilder.m in Sources */,
 				A94B2FA820BD349D00ED7904 /* BaseTableViewCell.m in Sources */,
 				A94B2FA520BD347700ED7904 /* FactoryMethodViewController.m in Sources */,
 				A94B2FAB20BD34B300ED7904 /* BaseATableViewCell.m in Sources */,
+				A96BE78720BE513C006A7ECA /* ModalAdapter.m in Sources */,
 				A94B2F9920BD24CB00ED7904 /* Prototype.m in Sources */,
 				A94B2FBD20BD423000ED7904 /* LHBuickVeranoBuilder.m in Sources */,
 				A94B2F8120BD23E200ED7904 /* ViewController.m in Sources */,
@@ -264,6 +299,7 @@
 				A94B2FC020BD423C00ED7904 /* LHBuickRegalBuilder.m in Sources */,
 				A94B2F9C20BD25B800ED7904 /* PrototyoeViewController.m in Sources */,
 				A94B2FAE20BD34BD00ED7904 /* BaseBTableViewCell.m in Sources */,
+				A96BE78420BE503E006A7ECA /* Adapter.m in Sources */,
 				A94B2FB420BD40F200ED7904 /* Director4S.m in Sources */,
 				A94B2FB120BD402700ED7904 /* LHBuickCar.m in Sources */,
 			);
